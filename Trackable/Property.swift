@@ -76,9 +76,9 @@ public protocol TrackedPropertyProtocol { }
 extension TrackedProperty : TrackedPropertyProtocol { }
 
 public extension Set where Element : TrackedPropertyProtocol {
-    public mutating func updateValuesFrom(_ properties: Set<TrackedProperty>) {
+    mutating func updateValuesFrom(_ properties: Set<TrackedProperty>) {
         var mutableSelf = self
-        properties.flatMap { $0 as? Element}
+        properties.compactMap { $0 as? Element}
                   .forEach {
                     mutableSelf.remove($0)
                     mutableSelf.insert($0)
@@ -86,7 +86,7 @@ public extension Set where Element : TrackedPropertyProtocol {
         self = mutableSelf
     }
     
-    public var dictionaryRepresentation: [String : AnyObject] {
+    var dictionaryRepresentation: [String : AnyObject] {
         return self.flattenSet
                    .reduce([String: AnyObject]()) { result, element in
                         var updatedResult = result
@@ -96,7 +96,7 @@ public extension Set where Element : TrackedPropertyProtocol {
                     }
     }
     
-    public var flattenSet: Set<TrackedProperty> {
+    var flattenSet: Set<TrackedProperty> {
         return reduce(Set<TrackedProperty>()) { (result, property) -> Set<TrackedProperty> in
             let property = property as! TrackedProperty
             var mutableResult = result

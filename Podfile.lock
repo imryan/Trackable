@@ -10,6 +10,12 @@ DEPENDENCIES:
   - Nimble
   - Quick
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Mixpanel
+    - Nimble
+    - Quick
+
 SPEC CHECKSUMS:
   Mixpanel: 550a23d5dd95f8e9cda21e697661ffddbc8da46b
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
@@ -17,4 +23,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 031fe2fe8b28f8440262c2a0de4ecf774036cd62
 
-COCOAPODS: 1.2.0.beta.3
+COCOAPODS: 1.6.1

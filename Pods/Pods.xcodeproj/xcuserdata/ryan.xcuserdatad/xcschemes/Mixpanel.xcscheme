@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A54798D11C14A33D00E88D1C"
-               BuildableName = "Trackable.framework"
-               BlueprintName = "Trackable"
-               ReferencedContainer = "container:Trackable.xcodeproj">
+               BlueprintIdentifier = "A8E881FC23E02FCA45891E16115918EB"
+               BuildableName = "Mixpanel.framework"
+               BlueprintName = "Mixpanel"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,29 +26,9 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A54798DB1C14A33D00E88D1C"
-               BuildableName = "TrackableTests.xctest"
-               BlueprintName = "TrackableTests"
-               ReferencedContainer = "container:Trackable.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A54798D11C14A33D00E88D1C"
-            BuildableName = "Trackable.framework"
-            BlueprintName = "Trackable"
-            ReferencedContainer = "container:Trackable.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -65,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A54798D11C14A33D00E88D1C"
-            BuildableName = "Trackable.framework"
-            BlueprintName = "Trackable"
-            ReferencedContainer = "container:Trackable.xcodeproj">
+            BlueprintIdentifier = "A8E881FC23E02FCA45891E16115918EB"
+            BuildableName = "Mixpanel.framework"
+            BlueprintName = "Mixpanel"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A54798D11C14A33D00E88D1C"
-            BuildableName = "Trackable.framework"
-            BlueprintName = "Trackable"
-            ReferencedContainer = "container:Trackable.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
