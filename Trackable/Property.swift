@@ -68,7 +68,9 @@ public func ==(l: TrackedProperty, r: TrackedProperty) -> Bool {
 }
 
 extension TrackedProperty : Hashable {
-    public var hashValue: Int { return key.hash }
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(key)
+    }
 }
 
 // Small "hack" how to constraint Set extension to a non-protocol type
